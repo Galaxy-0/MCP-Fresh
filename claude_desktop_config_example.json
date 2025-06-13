@@ -1,0 +1,49 @@
+{
+  "mcpServers": {
+    "code-insight": {
+      "command": "python3",
+      "args": [
+        "/Users/yuanquan/code_project/GalaxyAI/MCP-Fresh/minimal_code_server.py"
+      ],
+      "description": "智能代码分析师 - 提供Python代码分析、结构检测和质量评估"
+    },
+    "calculator": {
+      "command": "python3", 
+      "args": [
+        "/Users/yuanquan/code_project/GalaxyAI/MCP-Fresh/wearther_server.py"
+      ],
+      "description": "计算器服务 - 基础数学运算"
+    }
+  },
+  "instructions": {
+    "code-insight": [
+      "使用这个服务来分析代码质量和复杂度",
+      "可以分析单个文件或整个项目目录", 
+      "提供代码重构建议和问题检测",
+      "帮助理解项目结构和依赖关系"
+    ],
+    "calculator": [
+      "用于基础的数学运算",
+      "支持加法、减法、乘法运算"
+    ]
+  },
+  "notes": {
+    "setup": [
+      "将此文件保存为 ~/Library/Application Support/Claude/claude_desktop_config.json (macOS)",
+      "或 %APPDATA%/Claude/claude_desktop_config.json (Windows)",
+      "确保Python路径正确，建议使用绝对路径",
+      "重启Claude Desktop应用以加载配置"
+    ],
+    "security": [
+      "MCP服务器将运行在本地，具有访问文件系统的权限",
+      "确保只运行可信的MCP服务器",
+      "定期检查服务器代码的安全性"
+    ],
+    "troubleshooting": [
+      "如果服务器无法启动，检查Python环境和依赖",
+      "查看日志文件: mcp-server-*.log",
+      "确保服务器文件路径存在且可执行",
+      "检查端口是否被其他程序占用"
+    ]
+  }
+}
